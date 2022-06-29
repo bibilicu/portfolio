@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.navigation {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #1f1f1f;
+}
+
+.navigation p {
+  padding: 0.8rem 1.4rem;
+  height: 0;
+  float: left;
+  font-size: 21px;
+  font-weight: bold;
+  color: white;
+}
+
+.navigation ul {
+  float: right;
+  padding: 0.7rem 1rem;
+}
+
+.navigation ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+.navigation ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.3rem 1.3rem;
+  font-size: 18px;
+  color: white;
+}
+
+.navigation ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #1f1f1f;
+  border-radius: 0 0 0.7rem 0.7rem;
+}
+
+.navigation ul li:hover ul {
+  display: block;
+}
+
+.navigation ul li ul li {
+  width: 120px;
+  border-radius: 0.7rem;
+}
+
+.navigation ul li ul li a {
+  padding: 0.5rem;
+  color: white;
+}
+
+/* for making the underline for transition */
+.navigation ul li ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 75%;
+  height: 1.5px;
+  margin-left: 0.5rem;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  background-color: #53969a;
+}
+
+.navigation ul li ul li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 3rem 0;
+  padding: 0 70px;
+}
+
+.about {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 3rem;
+}
+
+.about h1 {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 25%;
+  height: 25%;
+  border-bottom: 0.2rem solid #53969a;
+}
+
+.bottom {
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  font-weight: 550;
+}
+
+.picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.me {
+  width: 350px;
+  height: 350px;
+  border-radius: 70%;
+  margin-top: 4rem;
+  margin-left: 3.5rem;
+}
+
+.icons {
+  text-align: center;
+  word-spacing: 3.5rem;
+}
+
+.github {
+  color: #53969a;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.github:hover {
+  color: #1f1f1f;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.linkedin {
+  color: #53969a;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.linkedin:hover {
+  color: #1f1f1f;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.gitlab {
+  color: #53969a;
+  font-size: 40px;
+}
+
+.gitlab:hover {
+  color: #1f1f1f;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+/*# sourceMappingURL=about.css.map */

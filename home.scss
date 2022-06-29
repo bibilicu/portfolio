@@ -1,0 +1,181 @@
+$navColor: rgb(31, 31, 31);
+$fontColor: white;
+$mainColor: rgb(83, 150, 154);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+	
+body {
+	
+	font-family: 'Titillium Web', sans-serif;
+}
+
+/* remaking the navbar */
+
+.navigation {
+	width: 100%;
+	height: 3.5rem;
+	background-color: $navColor;
+}
+
+.navigation p {
+	padding: 0.8rem 1.4rem;
+	height: 0;
+	float: left;
+	font-size: 21px;
+	font-weight: bold;
+	color: $fontColor;
+}
+
+.navigation ul {
+	float: right;
+	padding: 0.7rem 1rem;
+}
+
+.navigation ul li{
+	float: left;
+	list-style: none;
+	position: relative;
+}
+
+.navigation ul li a {
+	display: block;
+	text-decoration: none;
+	padding: 0.3rem 1.3rem;
+	font-size: 18px;
+	color: $fontColor;
+}
+
+.navigation ul li ul {
+	display: none;
+	position: absolute;
+	background-color: $navColor;
+	border-radius: 0 0 0.7rem 0.7rem;
+}
+
+.navigation ul li:hover ul {
+	display: block;
+}
+
+.navigation ul li ul li {
+    width: 120px;
+	border-radius: 0.7rem;
+}
+
+.navigation ul li ul li a {
+	padding: 0.5rem;
+	color: $fontColor;
+}
+
+/* for making the underline for transition */
+
+.navigation ul li ul li a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 75%;
+	height: 1.5px;
+	margin-left: 0.5rem;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 250ms ease-in;
+	background-color: $mainColor;
+}
+
+.navigation ul li ul li a:hover::after {
+	transform: scaleX(1);
+}
+
+
+ .welcome {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
+	
+}
+
+.icon {
+	border-radius: 80px;
+}
+
+.welcome h1 {
+	position: relative;
+	font-weight: bold;
+	font-size: 48px;
+	margin-top: 1rem;
+}
+
+.welcome h1::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 0.2rem;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 500ms ease-in-out;
+	background-color: $mainColor;
+}
+
+.welcome h1:hover::after {
+	width: 100%;
+	transform: scaleY(1);
+}
+
+.welcome p {
+	margin-top: 2rem;
+	font-size: 20px;
+	width: 50%;
+	text-align: center;
+}
+
+.work {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 1.3rem 0;
+}
+
+button {
+	height: 2.5rem;
+	padding: 0.7rem;
+	border-radius: 0.5rem;
+	border-style: hidden;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+	background-color: $navColor;
+}
+
+button a {
+	text-decoration: none;
+	color: $fontColor;
+	font-weight: bold;
+}
+
+button::after {
+	content: "";
+	position: absolute; 
+	width: 100%;
+	height: 100%;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 250ms ease-in;
+	top: 0;
+	left: 0;
+	background-color: $mainColor;
+	border-radius: 0.5rem;
+	z-index: -1;
+}
+
+button:hover::after {
+	transform: scaleX(1);
+	transform-origin: right;
+}
