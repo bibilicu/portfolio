@@ -113,13 +113,13 @@ body {
 .welcome h1::after {
 	content: "";
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	height: 0.2rem;
 	transform: scaleX(0);
-	transform-origin: left;
+	transform-origin: right;
 	transition: transform 500ms ease-in-out;
 	background-color: $mainColor;
 	z-index: -1;
@@ -128,7 +128,7 @@ body {
 .welcome h1:hover::after {
 	width: 100%;
 	transform: scaleY(1);
-	transform-origin: right;
+	transform-origin: left;
 }
 
 .welcome p {
@@ -169,7 +169,7 @@ button::after {
 	width: 100%;
 	height: 100%;
 	transform: scaleX(0);
-	transform-origin: left;
+	transform-origin: right;
 	transition: transform 250ms ease-in;
 	top: 0;
 	left: 0;
@@ -180,5 +180,5 @@ button::after {
 
 button:hover::after {
 	transform: scaleX(1);
-	transform-origin: right;
+	transform-origin: left;
 }
