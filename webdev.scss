@@ -5,6 +5,7 @@ $mainColor: rgb(83, 150, 154);
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 	
 body {
@@ -88,3 +89,47 @@ body {
 .navigation ul li ul li a:hover::after {
 	transform: scaleX(1);
 }
+
+.container_web {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+
+.title h1{
+	text-align: center;
+}
+
+.projects {
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem auto;
+	padding: 0 2.8rem;
+}
+
+
+.image {
+	width: 550px;
+	height: 400px;
+	flex-basis: 100%;
+	object-fit: cover;
+	object-position: bottom;
+	padding: 0.8rem;
+	margin: 1rem;
+	border: 0.05rem solid grey;
+}
+
+.title {
+	width: 50%;
+}
+
+.description {
+	width: 50%;
+}
+
+.projects a {
+	text-decoration: none;
+}
+

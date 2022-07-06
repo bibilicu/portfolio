@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -105,27 +107,34 @@ body {
 
 .description p {
   text-align: center;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .gallery {
-  margin-top: 2rem;
-  margin-left: 2rem;
-  width: 95%;
+  width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem auto;
+  padding: 0 8rem;
 }
 
 img {
   width: 300px;
   height: 400px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
-  padding: 3rem;
+  padding: 1.5rem;
+  margin: 1rem;
+  border: 0.05rem solid grey;
 }
 /*# sourceMappingURL=uiux.css.map */
