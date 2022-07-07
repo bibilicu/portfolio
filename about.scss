@@ -110,16 +110,9 @@ body {
 
 .about h1 {
 	margin-bottom: 1.5rem;
-	position: relative;
 	width: 25%;
 	height: 25%;
 	border-bottom: 0.2rem solid $mainColor;
-}
-
-.bottom {
-	position: absolute;
-	top: 20%;
-	bottom: 0;
 }
 
 .about p {
