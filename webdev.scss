@@ -9,7 +9,6 @@ $mainColor: rgb(83, 150, 154);
 }
 	
 body {
-	
 	font-family: 'Titillium Web', sans-serif;
 }
 
@@ -21,13 +20,19 @@ body {
 	background-color: $navColor;
 }
 
-.navigation p {
+.navigation h1 {
 	padding: 0.8rem 1.4rem;
 	height: 0;
 	float: left;
 	font-size: 21px;
 	font-weight: bold;
 	color: $fontColor;
+}
+
+.portfolio {
+	font-size: 18px;
+	color: $fontColor;
+	padding: 0.3rem 1.3rem;
 }
 
 .navigation ul {
@@ -90,46 +95,52 @@ body {
 	transform: scaleX(1);
 }
 
-.container_web {
+.title {
 	display: flex;
-	flex-direction: column;
-	margin-top: 2rem;
+	justify-content: center;
+	margin: 2rem 4rem;
 }
 
-.title h1{
-	text-align: center;
+.project_gallery {
+	margin-bottom: 7rem;
+	margin-top: 3rem;
 }
 
-.projects {
-	width: 100%;
+.images {
+	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
-	margin: 2rem auto;
-	padding: 0 2.8rem;
-}
-
-
-.image {
-	width: 550px;
-	height: 400px;
-	flex-basis: 100%;
-	object-fit: cover;
-	object-position: bottom;
-	padding: 0.8rem;
+	gap: 3.3rem;
 	margin: 1rem;
-	border: 0.05rem solid grey;
 }
 
-.title {
-	width: 50%;
+.images > li {
+	flex-basis: 350px;
 }
 
-.description {
-	width: 50%;
+.images li {
+	list-style: none;
 }
 
-.projects a {
+.images li img {
+	object-fit: cover;
+	width: 486px;
+	height: 329px;
+	vertical-align: middle;
+	border-radius: 3px;
+	border: 0.1rem solid grey;
+}
+
+.images li a {
 	text-decoration: none;
+}
+
+.images li a:hover {
+	opacity: 0.5;
+	transition-duration: 0.5s;
+}
+
+.images img {
+	padding: 0.5rem;
 }
 

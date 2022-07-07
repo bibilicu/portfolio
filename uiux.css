@@ -16,13 +16,19 @@ body {
   background-color: #1f1f1f;
 }
 
-.navigation p {
+.navigation h1 {
   padding: 0.8rem 1.4rem;
   height: 0;
   float: left;
   font-size: 21px;
   font-weight: bold;
   color: white;
+}
+
+.portfolio {
+  font-size: 18px;
+  color: white;
+  padding: 0.3rem 1.3rem;
 }
 
 .navigation ul {
