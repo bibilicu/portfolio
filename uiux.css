@@ -112,10 +112,7 @@ body {
 
 .description h1 {
   margin-bottom: 1rem;
-  width: 16%;
-  height: 16%;
-  margin-left: 30rem;
-  border-bottom: 0.2rem solid #53969a;
+  text-align: center;
 }
 
 .description p {

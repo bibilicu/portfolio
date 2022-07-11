@@ -52,6 +52,24 @@ body {
 	color: $fontColor;
 }
 
+.navigation ul li a::after{
+    content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 55%;
+	height: 1.5px;
+	margin-left: 1.3rem;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 250ms ease-in;
+	background-color: $mainColor;
+}
+
+.navigation ul li a:hover::after {
+	transform: scaleX(1);
+}
+
 .navigation ul li ul {
 	display: none;
 	position: absolute;
@@ -109,10 +127,8 @@ body {
 }
 
 .about h1 {
-	margin-bottom: 1.5rem;
-	width: 25%;
-	height: 25%;
-	border-bottom: 0.2rem solid $mainColor;
+	margin-bottom: 1rem;
+	font-weight: bold;
 }
 
 .about p {

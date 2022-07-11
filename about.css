@@ -49,6 +49,30 @@ body {
   color: white;
 }
 
+.navigation ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 55%;
+  height: 1.5px;
+  margin-left: 1.3rem;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  background-color: #53969a;
+}
+
+.navigation ul li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 .navigation ul li ul {
   display: none;
   position: absolute;
@@ -121,10 +145,8 @@ body {
 }
 
 .about h1 {
-  margin-bottom: 1.5rem;
-  width: 25%;
-  height: 25%;
-  border-bottom: 0.2rem solid #53969a;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .about p {
