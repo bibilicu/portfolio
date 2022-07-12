@@ -283,6 +283,9 @@ body {
     padding-bottom: 1rem;
     background-color: #1f1f1f;
   }
+  .navigation ul.show {
+    left: 0;
+  }
   .navigation ul li {
     display: none;
     width: 100%;

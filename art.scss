@@ -201,6 +201,10 @@ body {
 			padding-bottom: 1rem;
 			background-color: $navColor;
 		}
+
+		.navigation ul.show{
+			left: 0;
+		}
 	
 		.navigation ul li {
 			display: none;

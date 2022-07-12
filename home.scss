@@ -118,7 +118,7 @@ body {
 #menu {
 	float: right;
 	color: $fontColor;
-	font-size: 20px;
+	font-size: 25px;
 	margin: 0.7rem 0;
 	margin-left: 0.3rem;
 	margin-right: 2rem;
@@ -279,7 +279,7 @@ button:hover::after {
 
 	#menu {
 		display: block;
-	    margin-top: 1.2rem;
+	    margin-top: 1.3rem;
 		margin-bottom: 1.1rem;
 	}
 
@@ -306,7 +306,7 @@ button:hover::after {
 @media (max-width: 480px){
 
 	.navigation h1{
-		font-size: 20px;
+		font-size: 25px;
 		padding-top: 1.2rem;
 		padding-bottom: 0.9rem;
 	}
