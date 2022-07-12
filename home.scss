@@ -1,5 +1,5 @@
 $navColor: rgb(31, 31, 31);
-$navMobileColor: rgb(66, 66, 66);
+$navMobileColor: rgb(62, 98, 100);
 $fontColor: white;
 $mainColor: rgb(83, 150, 154);
 
@@ -273,10 +273,18 @@ button:hover::after {
 		font-size: 25px;
 	}
 
+	.navigation ul li ul li a:hover{
+		background: $navMobileColor;
+	}
+
 	.menu {
-		display: initial;
+		display: block;
 	    margin-top: 1.3rem;
 		margin-bottom: 1.1rem;
+	}
+
+	#box:checked ~ .navigation {
+		display: initial;
 	}
 
 	.welcome h1 {
