@@ -115,11 +115,7 @@ body {
 	transform: scaleX(1);
 }
 
-#box {
-	display: none;
-}
-
-.menu {
+#menu {
 	float: right;
 	color: $fontColor;
 	font-size: 25px;
@@ -224,6 +220,10 @@ button:hover::after {
 		background-color: $navColor;
 	}
 
+	.navigation ul.show{
+		left: 0;
+	}
+
 	.navigation ul li {
 		display: none;
 		width: 100%;
@@ -277,14 +277,10 @@ button:hover::after {
 		background: $navMobileColor;
 	}
 
-	.menu {
+	#menu {
 		display: block;
 	    margin-top: 1.3rem;
 		margin-bottom: 1.1rem;
-	}
-
-	#box:checked ~ .navigation {
-		display: initial;
 	}
 
 	.welcome h1 {
