@@ -53,11 +53,11 @@ body {
 .navigation ul li a::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 12px;
+  bottom: 3px;
   width: 55%;
-  height: 1.5px;
-  margin-left: 1.3rem;
+  height: 1px;
+  margin-left: 0.5rem;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: left;
@@ -76,13 +76,13 @@ body {
 
 .navigation ul li ul {
   display: none;
-  position: absolute;
   background-color: #1f1f1f;
   border-radius: 0 0 0.7rem 0.7rem;
 }
 
 .navigation ul li:hover ul {
   display: block;
+  position: absolute;
 }
 
 .navigation ul li ul li {
@@ -100,8 +100,8 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
-  width: 75%;
+  bottom: 5px;
+  width: 85%;
   height: 1.5px;
   margin-left: 0.5rem;
   -webkit-transform: scaleX(0);
@@ -118,6 +118,20 @@ body {
 .navigation ul li ul li a:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+#box {
+  display: none;
+}
+
+.menu {
+  float: right;
+  color: white;
+  font-size: 25px;
+  margin: 0.7rem 0;
+  margin-left: 0.3rem;
+  margin-right: 2rem;
+  display: none;
 }
 
 .welcome {
@@ -215,5 +229,109 @@ button:hover::after {
           transform: scaleX(1);
   -webkit-transform-origin: left;
           transform-origin: left;
+}
+
+@media (max-width: 768px) {
+  .navigation h1 {
+    padding-top: 1.3rem;
+    padding-bottom: 1.1rem;
+    font-size: 25px;
+  }
+  .navigation {
+    margin: 0;
+  }
+  .navigation ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #1f1f1f;
+  }
+  .navigation ul li {
+    display: none;
+    width: 100%;
+  }
+  .navigation ul:hover li {
+    display: block;
+  }
+  .navigation ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  .navigation ul li a {
+    font-size: 25px;
+    text-align: center;
+    line-height: 3rem;
+  }
+  .navigation ul li a::after {
+    content: "";
+    display: none;
+  }
+  .navigation ul li ul li a::after {
+    content: "";
+    display: none;
+  }
+  .portfolio {
+    text-align: center;
+    font-size: 25px;
+  }
+  .navigation ul li ul {
+    z-index: 1;
+  }
+  .navigation ul li ul li {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .navigation ul li ul li a {
+    text-align: center;
+    font-size: 25px;
+  }
+  .menu {
+    display: initial;
+    margin-top: 1.3rem;
+    margin-bottom: 1.1rem;
+  }
+  .welcome h1 {
+    font-size: 35px;
+  }
+  .welcome p {
+    width: 80%;
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+  }
+  button {
+    padding: 0.5rem;
+  }
+  button a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation h1 {
+    font-size: 25px;
+    padding-top: 1.2rem;
+    padding-bottom: 0.9rem;
+  }
+  .navigation ul li a {
+    font-size: 20px;
+  }
+  .portfolio {
+    font-size: 20px;
+  }
+  .navigation ul li ul li a {
+    font-size: 20px;
+  }
+  .welcome h1 {
+    font-size: 25px;
+  }
+  button {
+    padding: 0.3rem;
+  }
+  button a {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=home.css.map */
