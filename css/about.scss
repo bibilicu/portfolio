@@ -130,9 +130,9 @@ body {
 
 .container {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: column-reverse;
 	justify-content: center;
-	width: 100%;
+
 	box-sizing: border-box;
 	margin: 3rem 0;
 	padding: 0 70px;
@@ -156,8 +156,8 @@ body {
 	font-weight: 550;
 }
 
-.picture {
-	flex: 1;
+.picture{
+	align-self: center;
 }
 
 .me {
@@ -206,10 +206,6 @@ body {
 }
 
 @media (max-width: 1080px){
-	.container {
-		flex-direction: column-reverse;
-		justify-content: center;
-	}
 
 	.about h1 {
 		padding-top: 1rem;
@@ -223,10 +219,6 @@ body {
 	.about h1,
 	.about p {
 		margin-left: 3rem;
-	}
-
-	.picture{
-		align-self: center;
 	}
 	
 	.me {
