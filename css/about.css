@@ -1,19 +1,18 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 /* remaking the navbar */
 .navigation {
   width: 100%;
   height: 3.5rem;
-  background-color: #1f1f1f;
+  background-color: rgb(31, 31, 31);
 }
 
 .navigation h1 {
@@ -58,25 +57,19 @@ body {
   width: 55%;
   height: 1px;
   margin-left: 0.5rem;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: -webkit-transform 250ms ease-in;
-  transition: -webkit-transform 250ms ease-in;
+  transform: scaleX(0);
+  transform-origin: left;
   transition: transform 250ms ease-in;
-  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
-  background-color: #53969a;
+  background-color: rgb(83, 150, 154);
 }
 
 .navigation ul li a:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .navigation ul li ul {
   display: none;
-  background-color: #1f1f1f;
+  background-color: rgb(31, 31, 31);
   border-radius: 0 0 0.7rem 0.7rem;
 }
 
@@ -104,20 +97,14 @@ body {
   width: 85%;
   height: 1.5px;
   margin-left: 0.5rem;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: -webkit-transform 250ms ease-in;
-  transition: -webkit-transform 250ms ease-in;
+  transform: scaleX(0);
+  transform-origin: left;
   transition: transform 250ms ease-in;
-  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
-  background-color: #53969a;
+  background-color: rgb(83, 150, 154);
 }
 
 .navigation ul li ul li a:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 #box {
@@ -135,28 +122,20 @@ body {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 3rem 0;
   padding: 0 70px;
 }
 
 .about {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-right: 3rem;
+  margin-top: 2rem;
+  text-align: center;
+  flex: 1;
 }
 
 .about h1 {
@@ -165,106 +144,87 @@ body {
 }
 
 .about p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2rem;
   margin-bottom: 1.5rem;
-  width: 95%;
-  font-weight: 550;
+  padding-right: 5rem;
+  margin-left: 14.5rem;
+  text-align: center;
+  width: 65%;
 }
 
 .picture {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  align-self: center;
 }
 
 .me {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 70%;
-  margin-top: 4rem;
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 
 .icons {
   text-align: center;
+  margin-top: 3rem;
   word-spacing: 3.5rem;
 }
 
 .github {
-  color: #53969a;
+  color: rgb(83, 150, 154);
   font-size: 40px;
   text-decoration: none;
 }
 
 .github:hover {
-  color: #1f1f1f;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  color: rgb(31, 31, 31);
+  transition-duration: 500ms;
 }
 
 .linkedin {
-  color: #53969a;
+  color: rgb(83, 150, 154);
   font-size: 40px;
   text-decoration: none;
 }
 
 .linkedin:hover {
-  color: #1f1f1f;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  color: rgb(31, 31, 31);
+  transition-duration: 500ms;
 }
 
 .gitlab {
-  color: #53969a;
+  color: rgb(83, 150, 154);
   font-size: 40px;
 }
 
 .gitlab:hover {
-  color: #1f1f1f;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  color: rgb(31, 31, 31);
+  transition-duration: 500ms;
 }
 
 @media (max-width: 1080px) {
-  .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .about h1 {
-    padding-top: 1rem;
     font-size: 35px;
+    margin-left: 1rem;
   }
   .about p {
     font-size: 20px;
+    margin-left: 1rem;
+    width: 90%;
   }
-  .about h1,
-  .about p {
-    margin-left: 3rem;
-  }
-  .picture {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+  .about h1 {
+    margin-right: 2rem;
   }
   .me {
-    width: 300px;
-    height: 300px;
     border-radius: 70%;
     margin: 1rem 0;
   }
   .icons {
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-right: 2rem;
     word-spacing: 5rem;
   }
 }
-
 @media (max-width: 768px) {
   .navigation h1 {
     padding-top: 1.3rem;
@@ -281,7 +241,7 @@ body {
     right: 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #1f1f1f;
+    background-color: rgb(31, 31, 31);
   }
   .navigation ul.show {
     left: 0;
@@ -330,8 +290,15 @@ body {
     margin-top: 1.3rem;
     margin-bottom: 1.1rem;
   }
+  .about p {
+    font-size: 21px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .about h1 {
+    margin-right: 1rem;
+  }
 }
-
 @media (max-width: 480px) {
   .navigation h1 {
     font-size: 25px;
@@ -353,20 +320,19 @@ body {
   .about h1,
   .about p {
     text-align: center;
-    margin: 0 1.5rem;
+    margin: 0;
     line-height: 2.5rem;
-    width: 100%;
+    width: 95%;
   }
   .about p {
     margin-top: 1.5rem;
   }
   .me {
-    width: 260px;
-    height: 260px;
+    width: 280px;
+    height: 280px;
   }
   .icons {
     word-spacing: 2.5rem;
     margin-left: 2.7rem;
   }
-}
-/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=about.css.map */

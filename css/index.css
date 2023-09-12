@@ -1,19 +1,18 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 /* remaking the navbar */
 .navigation {
   width: 100%;
   height: 3.5rem;
-  background-color: #1f1f1f;
+  background-color: rgb(31, 31, 31);
 }
 
 .navigation h1 {
@@ -58,25 +57,19 @@ body {
   width: 55%;
   height: 1px;
   margin-left: 0.5rem;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: -webkit-transform 250ms ease-in;
-  transition: -webkit-transform 250ms ease-in;
+  transform: scaleX(0);
+  transform-origin: left;
   transition: transform 250ms ease-in;
-  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
-  background-color: #53969a;
+  background-color: rgb(59, 134, 138);
 }
 
 .navigation ul li a:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .navigation ul li ul {
   display: none;
-  background-color: #1f1f1f;
+  background-color: rgb(31, 31, 31);
   border-radius: 0 0 0.7rem 0.7rem;
 }
 
@@ -104,20 +97,14 @@ body {
   width: 85%;
   height: 1.5px;
   margin-left: 0.5rem;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: -webkit-transform 250ms ease-in;
-  transition: -webkit-transform 250ms ease-in;
+  transform: scaleX(0);
+  transform-origin: left;
   transition: transform 250ms ease-in;
-  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
-  background-color: #53969a;
+  background-color: rgb(59, 134, 138);
 }
 
 .navigation ul li ul li a:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 #menu {
@@ -131,19 +118,10 @@ body {
 }
 
 .welcome {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 2rem;
 }
 
@@ -155,7 +133,7 @@ body {
   position: relative;
   font-weight: bold;
   font-size: 48px;
-  border-bottom: 0.2rem solid #53969a;
+  border-bottom: 0.2rem solid rgb(59, 134, 138);
 }
 
 .welcome p {
@@ -166,19 +144,10 @@ body {
 }
 
 .work {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
   margin: 1.3rem 0;
 }
 
@@ -190,7 +159,7 @@ button {
   position: relative;
   z-index: 1;
   cursor: pointer;
-  background-color: #1f1f1f;
+  background-color: rgb(31, 31, 31);
   margin: 0 1rem;
 }
 
@@ -205,26 +174,20 @@ button::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transition: -webkit-transform 250ms ease-in;
-  transition: -webkit-transform 250ms ease-in;
+  transform: scaleX(0);
+  transform-origin: right;
   transition: transform 250ms ease-in;
-  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
   top: 0;
   left: 0;
-  background-color: #53969a;
+  background-color: rgb(59, 134, 138);
   border-radius: 0.5rem;
   z-index: -1;
+  color: rgb(31, 31, 31);
 }
 
 button:hover::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 @media (max-width: 768px) {
@@ -243,7 +206,7 @@ button:hover::after {
     right: 0;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #1f1f1f;
+    background-color: rgb(31, 31, 31);
   }
   .navigation ul.show {
     left: 0;
@@ -288,7 +251,7 @@ button:hover::after {
     font-size: 25px;
   }
   .navigation ul li ul li a:hover {
-    background: #3e6264;
+    background: rgb(73, 116, 118);
   }
   #menu {
     display: block;
@@ -310,7 +273,6 @@ button:hover::after {
     font-size: 12px;
   }
 }
-
 @media (max-width: 480px) {
   .navigation h1 {
     font-size: 25px;
@@ -335,5 +297,4 @@ button:hover::after {
   button a {
     font-size: 12px;
   }
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
