@@ -134,10 +134,11 @@ body {
   font-weight: bold;
   font-size: 48px;
   border-bottom: 0.2rem solid rgb(59, 134, 138);
+  margin: auto;
 }
 
 .welcome p {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 20px;
   width: 50%;
   text-align: center;
@@ -148,7 +149,7 @@ body {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  margin: 1.3rem 0;
+  margin: 2rem 0;
 }
 
 button {
@@ -263,7 +264,8 @@ button:hover::after {
     font-size: 18px;
   }
   button {
-    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   button a {
     font-size: 12px;
@@ -285,10 +287,15 @@ button:hover::after {
     font-size: 20px;
   }
   .welcome h1 {
-    font-size: 25px;
+    text-align: center;
+    font-size: 30px;
+    width: 70%;
   }
   button {
-    padding: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.4rem;
+    height: 3.5rem;
   }
   button a {
     font-size: 12px;

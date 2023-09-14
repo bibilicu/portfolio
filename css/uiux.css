@@ -125,7 +125,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2rem 4rem;
+  margin: 2rem 0;
 }
 
 .description h1 {
@@ -136,10 +136,10 @@ body {
 .description p {
   line-height: 1.8rem;
   margin: auto;
-  width: 60%;
-  font-size: 20px;
+  width: 70%;
+  font-size: 19px;
   text-align: center;
-  line-height: 2.5rem;
+  line-height: 2rem;
 }
 
 .gallery {
