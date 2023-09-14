@@ -16,7 +16,7 @@ body {
 }
 
 .navigation h1 {
-  padding: 0.8rem 1.4rem;
+  padding: 0.8rem 1rem;
   height: 0;
   float: left;
   font-size: 21px;
@@ -192,9 +192,9 @@ button:hover::after {
 
 @media (max-width: 768px) {
   .navigation h1 {
-    padding-top: 1.3rem;
+    padding-top: 1.7rem;
     padding-bottom: 1.1rem;
-    font-size: 25px;
+    font-size: 18px;
   }
   .navigation {
     margin: 0;
@@ -275,8 +275,8 @@ button:hover::after {
 }
 @media (max-width: 480px) {
   .navigation h1 {
-    font-size: 25px;
-    padding-top: 1.2rem;
+    font-size: 18px;
+    padding-top: 1.7rem;
     padding-bottom: 0.9rem;
   }
   .navigation ul li a {

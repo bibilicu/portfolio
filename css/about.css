@@ -135,7 +135,6 @@ body {
 .about {
   margin-top: 2rem;
   text-align: center;
-  flex: 1;
 }
 
 .about h1 {
@@ -146,11 +145,11 @@ body {
 .about p {
   font-size: 18px;
   line-height: 2rem;
-  margin-bottom: 1.5rem;
-  padding-right: 5rem;
-  margin-left: 14.5rem;
+  margin: auto;
   text-align: center;
-  width: 65%;
+  width: 60%;
+  line-height: 2.5rem;
+  padding: 0 1.5rem;
 }
 
 .picture {
@@ -161,7 +160,7 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 70%;
-  margin-left: 1rem;
+  margin: auto;
 }
 
 .icons {
@@ -205,23 +204,16 @@ body {
 @media (max-width: 1080px) {
   .about h1 {
     font-size: 35px;
-    margin-left: 1rem;
   }
   .about p {
     font-size: 20px;
-    margin-left: 1rem;
     width: 90%;
-  }
-  .about h1 {
-    margin-right: 2rem;
   }
   .me {
     border-radius: 70%;
-    margin: 1rem 0;
   }
   .icons {
     margin-top: 3rem;
-    margin-right: 2rem;
     word-spacing: 5rem;
   }
 }
@@ -328,11 +320,11 @@ body {
     margin-top: 1.5rem;
   }
   .me {
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
+    margin-top: 1.3rem;
   }
   .icons {
     word-spacing: 2.5rem;
-    margin-left: 2.7rem;
   }
 }/*# sourceMappingURL=about.css.map */

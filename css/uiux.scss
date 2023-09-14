@@ -156,7 +156,7 @@ body {
 }
 
 .pictures > li {
-  flex-basis: 340px;
+  flex-basis: 450px;
 }
 
 .pictures li {
@@ -167,8 +167,11 @@ body {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.border {
   border-radius: 3px;
-  border: 0.2rem solid black;
+  border: 0.15rem solid rgb(117, 117, 117);
 }
 
 @media (max-width: 768px) {
