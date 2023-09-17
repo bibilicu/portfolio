@@ -14,22 +14,28 @@
 
 <body>
 
-	<nav class="navigation">
-		<input type="checkbox" id="box">
-        <label for="check_box" class="menu">
-        <i class="fa fa-bars"></i>
-        </label>
+	<!-- navigation bar -->
+	<nav class="navigation" id="burger_menu">
 		<h1>Grecu Filoftea-Bianca</h1>
+					<!-- For phone and tablet -->
+					<a href="#" class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</a>
+			
+		<div class="nav_links">
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><p class="portfolio">Portfolio</p>
-			<ul>
+			<li id="dropdown_works"><a>Works</a>
+			<ul id="dropdown_list">
 				<li><a href="webdev.html">Web Development</a></li>
 				<li><a href="uiux.html">UI/UX Design</a></li>
 			</ul>
 		</li>
 			<li><a href="about.html">About</a></li>
 		</ul>
+	</div>
 	</nav>
 
 	<header class="description">
@@ -76,6 +82,8 @@
 		</li>
 	</ul>
 	</div>
+
+	<script src="js/app.js"></script>
 
 </body>
 </html>
