@@ -146,10 +146,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  padding: 0 2rem;
 }
 
 .pictures > li {
-  flex-basis: 450px;
+  flex-basis: 400px;
 }
 
 .pictures li {
