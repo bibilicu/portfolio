@@ -9,6 +9,11 @@ body {
 }
 
 /* remaking the navbar */
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
