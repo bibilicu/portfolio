@@ -187,6 +187,13 @@ a {
   margin-bottom: 1rem;
 }
 
+.link1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
 .links {
   display: flex;
   flex-direction: row;
@@ -207,6 +214,7 @@ a {
   margin-top: 1rem;
   color: $fontColor;
   font-weight: bold;
+  font-size: 15px;
 }
 
 .source {
